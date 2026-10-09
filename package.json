@@ -1,0 +1,21 @@
+{
+  "name": "qa-automation-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desafio tecnico de QA Automation com Cypress e JavaScript",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.feature\"",
+    "test:web": "cypress run --spec \"cypress/e2e/frontend/**/*.feature\"",
+    "test:bonus": "cypress run --spec \"cypress/e2e/frontend/web-tables.feature\""
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "2.3.0",
+    "@badeball/cypress-cucumber-preprocessor": "22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.8",
+    "@faker-js/faker": "9.9.0",
+    "cypress": "14.5.4",
+    "esbuild": "0.25.5"
+  }
+}
